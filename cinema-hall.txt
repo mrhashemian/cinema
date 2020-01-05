@@ -1,8 +1,4 @@
-Hall no.1:
-Hall Name: fajr
-Hall Capacity: 33
-
-Hall no.2:
-Hall Name: bahman
-Hall Capacity: 23
-
+Fajr Hall
+20
+Bahman
+39

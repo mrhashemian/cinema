@@ -17,8 +17,8 @@ struct CinemaHall{
     //some add-on details
     char hallName[20];
     int hallCapacity;
-//    struct CinemaSchedule schedule[5];
-};
+    struct CinemaSchedule schedule[5];
+} cinemaHall[];
 
 int main()
 {
@@ -31,7 +31,7 @@ int main()
 	if(userType == 'a'){
 		scanf("%d", &hallNumber);
 	    cinema = fopen("cinema-hall.txt", "w+");
-	    struct CinemaHall cinemaHall[hallNumber];
+	    cinemaHall[hallNumber];
 	    printf("Add Halls\n\n");
 	    for(int i = 0; i < hallNumber; i++){
 	        printf("Hall no.%d:\n", i + 1);
@@ -53,9 +53,17 @@ int main()
 	}else{
 		cinema = fopen("cinema-hall.txt", "r+");
 		printf("choose Hall\n");
-		char inemaHall;
-		fscanf(cinema,"Hall Name: %c\n", inemaHall);
-		fprintf(cinema, "Hall Name: %s\n", inemaHall);
+		int i;
+		for(i = 0; !feof(cinema);i++){
+			fgets(cinemaHall[i].hallName, 100, cinema);
+			fscanf(cinema, "%d", &cinemaHall[i].hallCapacity);
+			fscanf(cinema, "\n");
+			printf("%d- %s", i + 1, cinemaHall[i].hallName);
+		}
+		scanf("%d", &hallNumber);
+		fseek
+		fscanf
+		fprintf
 	}
     return 0;
 }
