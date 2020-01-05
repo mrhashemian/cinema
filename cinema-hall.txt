@@ -1,0 +1,12 @@
+Hall no.1:
+Hall Name: hafez
+Hall Capacity: 33
+
+Hall no.2:
+Hall Name: molana
+Hall Capacity: 34
+
+Hall no.3:
+Hall Name: bahman
+Hall Capacity: 344
+
