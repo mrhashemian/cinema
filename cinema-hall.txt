@@ -4,5 +4,5 @@ Hall Capacity: 40
 
 Hall no.2:
 Hall Name: fajr
-Hall Capacity: 29
+Hall Capacity: 30
 
